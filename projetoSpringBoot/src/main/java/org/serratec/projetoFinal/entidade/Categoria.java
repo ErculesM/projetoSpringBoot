@@ -30,7 +30,7 @@ public class Categoria {
 	@Column(name = "descricao", nullable = false, length = 50)
 	private String descricao;
 	
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne()
 	@JoinColumn(name = "id_funcionario", referencedColumnName = "id_funcionario")
 	private Funcionario funcionario;
 
